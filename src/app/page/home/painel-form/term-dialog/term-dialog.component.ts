@@ -8,7 +8,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 @Component({
   selector: 'app-term-dialog',
   templateUrl: './term-dialog.component.html',
-  styleUrls: ['./term-dialog.component.scss']
+  styleUrls: ['./term-dialog.component.css']
 })
 export class TermDialogComponent implements OnInit {
   
