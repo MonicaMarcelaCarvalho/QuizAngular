@@ -1,0 +1,25 @@
+<button mat-icon-button style="float:right" (click)="close()" aria-label="Fechar o termo">
+    <mat-icon>close</mat-icon>
+  </button>   
+<div class="row">
+    <div mat-dialog-content class="dialog">       
+        <form class="example-form">
+            <h3 mat-dialog-title class="dialog-title">Termo</h3>
+
+            <div class="dialog-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
+                dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            </div>
+        
+            <section class="dialog-radio">
+                <mat-checkbox (change)="onChangeChecker($event)" class="dialog-radio-margin"> Li e aceito os termos e condições acima</mat-checkbox>
+            </section>
+
+            <div class="dialog-button">
+                <button mat-raised-button [disabled]="isDisabled()" (click)="isRouter()" class="dialog-button-color">OK, ENTENDI</button>
+            </div>
+        </form>
+    </div>
+</div>

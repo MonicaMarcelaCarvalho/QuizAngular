@@ -1,0 +1,20 @@
+{
+    "questionFlag": [
+        {
+            "label": 1,
+            "value": "Nunca operei"
+        },
+        {
+            "label": 2,
+            "value": "Opero pouco e não tenho familiaridade"
+        },
+        {
+            "label": 3,
+            "value": "Opero eventualmente e conheço os riscos associados"
+        },
+        {
+            "label": 4,
+            "value": "Opero frequentemente e conheço os riscos associados"
+        }
+    ]
+}

@@ -1,0 +1,49 @@
+{
+    "questionForm": [
+        {
+            "id": 1,
+            "nome": "Qual o seu comportamento em relação aos seus investimentos?",
+            "position": "question1",
+            "indFlag": 1,
+            "question": [
+                {"descBreve": "PRESERVAR MEU DINHEIRO SEM CORRER RISCOS"},
+                {"descBreve": "Ganhar mais dinheiro, ASSUMINDO RISCOS AGRESSIVOS"},
+                {"descBreve": "Ganhar mais dinheiro, ASSUMINDO RISCOS MODERADOS"}
+            ]
+        },
+        {
+            "id": 2,
+            "nome": "Por quanto tempo você deseja manter os seus investimentos?",
+            "position": "question2",
+            "indFlag": 1,
+            "question": [
+                {"descBreve": "ATE 1 ANO"},
+                {"descBreve": "DE 1 A 3 ANOS"},
+                {"descBreve": "DE 3 A 4 ANOS"}
+            ]
+        },
+        {
+            "id": 3,
+            "nome": "Quantos % desses investimentos você pode em um ano?",
+            "position": "question3",
+            "indFlag": 1,
+            "question": [
+                {"descBreve": "Acima de 75%"},
+                {"descBreve": "DE 26% A 74%"},
+                {"descBreve": "ATE 25%"}                
+            ]
+        },
+        {
+            "id": 4,
+            "nome": "Qual sua familiaridade com os tipos de investimentos abaixo? Leve em consideração o valor aplicado nos Últimos 2 anos.",
+            "position": "question4",
+            "indFlag": 0,
+            "question": [
+                {"descBreve": "TITULOS DE RENDA FOCA OU TESOURO DIRETO"},
+                {"descBreve": "FUNDOS DE INVESTIMENTOS"},
+                {"descBreve": "AÇOES A VISTA"},
+                {"descBreve": "ALUGUEL DE AÇÕES TERMOS, OPÇOES E FUTUROS"}
+            ]
+        }
+    ]
+}

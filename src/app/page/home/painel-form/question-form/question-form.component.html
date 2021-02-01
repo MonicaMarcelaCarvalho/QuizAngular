@@ -1,0 +1,63 @@
+
+<mat-toolbar>
+    <mat-toolbar-row class="toolbar">
+        <img src="assets/images/cedro_technologies.png" class="img-fluid">
+    </mat-toolbar-row>
+</mat-toolbar>
+
+<div class="row justify-content-md-center panel-content">
+
+    <div *ngIf="position != 0">
+        <h2>O cadastro foi realizado com sucesso...</h2>
+        <a href="#" (click)="clickVoltar()" style="float: right;">VOLTAR</a>
+    </div>
+
+    <div class="form-question" *ngIf="position == 0">
+        <h4 mat-dialog-title class="form-question-title">PERFIL DO INVESTIDOR – QUESTIONÁRIO</h4>
+
+        <div class="col-12" *ngIf="booleanButton === false">
+            <div  class="alert alert-success">  
+                <b class="glyphicon glyphicon-ok'"></b>
+                Obrigada por responde as questões! 
+                <a href="#" (click)="clickVoltar()" style="float:right">VOLTAR</a>
+            </div>
+        </div>
+
+        <form class="form-question-form" [formGroup]="groupForm">
+            
+            <div>
+                <div class="form-question-numero" *ngFor="let painel of question">
+                    <div *ngIf="painel.indFlag == 1">
+                        <p>{{ painel.id }} – {{ painel.nome }}*</p>
+                        <mat-radio-group formControlName="{{ painel.position }}">
+                            <mat-radio-button class="menu" *ngFor="let m of painel.question" [value]="m.descBreve" [checked]="painel.descBreve === m.descBreve">
+                                {{ m.descBreve }}
+                            </mat-radio-button>
+                        </mat-radio-group>
+                    </div>
+                    <div *ngIf="painel.indFlag == 0">
+                        <p>{{ painel.id }} – {{ painel.nome }} </p>
+                        <div class="questionUltima">
+                            <div *ngFor="let m of painel.question; let k = index">
+                                <p color="color-black" [ngClass]="{'color-red': isClickQuestion('questionA' + k )}">{{ m.descBreve }}</p>
+                                
+                                <mat-form-field appearance="fill" class="col-4">
+                                    <mat-label >Escolha Resposta</mat-label>
+                                    <mat-select formControlName="{{ 'questionA' + k }}" required>
+                                        <mat-option *ngFor="let option of flag" value="{{ option.label }}">{{ option.value }}</mat-option>
+                                    </mat-select>
+                                </mat-form-field>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-question-button" *ngIf="booleanButton">
+                <button mat-stroked-button class="btn-lg" (click)="clickVoltar()">VOLTAR</button>
+                <button mat-flat-button class="btn-lg form-question-color" [disabled]="groupForm.invalid" (click)="clickSalvar()">SALVAR</button>
+            </div>
+        </form>
+    </div>
+</div>
+

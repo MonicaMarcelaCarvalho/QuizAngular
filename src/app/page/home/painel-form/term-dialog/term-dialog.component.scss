@@ -1,0 +1,31 @@
+.dialog {
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    text-align: justify;
+
+    &-title {
+        font-weight: bold;
+        text-align: center;
+        color: rgb(167, 45, 66);
+    }
+
+    &-description{
+        padding: 5px;
+    }
+
+    &-radio {
+        text-align: center;
+        padding: 5px;
+        border-top: 1px dashed #e5e5e5;
+    }
+
+    &-button {
+        text-align: center;
+        padding: 5px;
+
+        &-color {
+            background-color: orange;
+            color: white;
+        }
+    }
+}
