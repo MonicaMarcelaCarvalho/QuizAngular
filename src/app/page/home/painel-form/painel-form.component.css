@@ -10,40 +10,42 @@
     font-family: "Roboto", Helvetica, Arial, sans-serif;
     line-height: 1.5;
     color: #333333;
-    &-form {
-        margin: 0 15%;
-    }
+}
 
-    &-icon {
-        display: contents;
-        text-align: center;
-        padding: 5px;
-        font-size: 80px;
-        color: #919191;
-    }
+.painel-form {
+    margin: 0 15%;
+}
 
-    &-title {
-        font-weight: bold;
-        color: rgb(167, 45, 66);
-    }
+.painel-icon {
+    display: contents;
+    text-align: center;
+    padding: 5px;
+    font-size: 80px;
+    color: #919191;
+}
 
-    &-description {
-        text-align: center;
-        padding: 10px;
-        &-fourth {
-            padding-top: 20px;
-        }
-    }
+.painel-title {
+    font-weight: bold;
+    color: rgb(167, 45, 66);
+}
 
-    &-button {
-        padding: 5px;
-        
-        &-stroked {
-            margin: 5px;
-            padding: 5px 35px 5px 35px;
-            color: rgb(167, 45, 66) !important;
-            border-color: rgb(167, 45, 66);
-            display: auto;
-        }
-    }
+.painel-description {
+    text-align: center;
+    padding: 10px;
+}
+
+.painel-description-fourth {
+    padding-top: 20px;
+}
+
+.painel-button {
+    padding: 5px;
+}   
+
+.painel-button-stroked {
+    margin: 5px;
+    padding: 5px 35px 5px 35px;
+    color: rgb(167, 45, 66) !important;
+    border-color: rgb(167, 45, 66);
+    display: auto;
 }

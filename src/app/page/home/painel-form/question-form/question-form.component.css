@@ -17,27 +17,25 @@
   color: #e5e5e5;
 }
 
-.form-question {
-  &-title {
-    text-align: center;
-    padding: 10px;
-    color: rgb(167, 45, 66);
-  }
+.form-question-title {
+  text-align: center;
+  padding: 10px;
+  color: rgb(167, 45, 66);
+}
 
-  &-numero {
-    border-bottom: 2px dashed #e5e5e5;
-    padding: 20px;
-  }
+.form-question-numero {
+  border-bottom: 2px dashed #e5e5e5;
+  padding: 20px;
+}
 
-  &-color {
-    background-color: orange;
-    margin-left: 5px;
-  }
+.form-question-color {
+  background-color: orange;
+  margin-left: 5px;
+}
 
-  &-button {
-    text-align: end;
-    padding: 10px;
-  }
+.form-question-button {
+  text-align: end;
+  padding: 10px;
 }
 
 .btn-lg {
